@@ -1,9 +1,9 @@
 import java.util.*;
-public class TeamCaptains
+public class TeamCaptains implements ITeamCaptains
 {
     private enum captianNames {Faf, Khune, Eben};
 
-    public void TeamCaptianNames()
+    public void GetCaptianNames()
     {
         Set<captianNames> set = EnumSet.allOf(captianNames.class);
         Iterator<captianNames> iter = set.iterator();

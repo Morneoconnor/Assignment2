@@ -1,15 +1,16 @@
 import java.util.*;
 
-public class UserInput
+public class UserInput implements IUserInput
 {
     Scanner input = new Scanner(System.in);
+
     public void InputOutPutMehtod()
     {
-        Teams teams = new Teams();
-        TeamCaptains captains = new TeamCaptains();
+        ITeams teams = new Teams();
+        ITeamCaptains captains = new TeamCaptains();
 
         System.out.println("Select your favourite South African sports  enter the number 0 - 2");
-        List<String> teamList = teams.SportsTeams();
+        List<String> teamList = teams.DisplaySportsTeams();
 
         System.out.println(teamList);
         int selectedVal = input.nextInt();
@@ -21,13 +22,8 @@ public class UserInput
         System.out.println(sortedList);
 
         System.out.println("See the names who captian the south african national sides");
-        captains.TeamCaptianNames();
+        captains.GetCaptianNames();
         input.next();
-
-
-
-
-
 
     }
 

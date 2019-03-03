@@ -2,7 +2,7 @@ public class Program
 {
     public static void main(String []args)
     {
-        UserInput inputOutput = new UserInput();
+        IUserInput inputOutput = new UserInput();
 
         inputOutput.InputOutPutMehtod();
     }

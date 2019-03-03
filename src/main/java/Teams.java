@@ -3,9 +3,9 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-public class Teams {
+public class Teams implements ITeams{
 
-   public List<String> SportsTeams()
+   public List<String> DisplaySportsTeams()
    {
        List<String> teams = new ArrayList<String>();
        teams.add(0,"Proteas");
